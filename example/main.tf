@@ -100,7 +100,7 @@ module "hive" {
   nomad_datacenters = local.nomad_datacenters
   nomad_namespace   = local.nomad_namespace
 
-  nomad_job_switch_local = false
+  local_docker_image = false
 
   # hive
   hive_service_name   = "hive-metastore"
